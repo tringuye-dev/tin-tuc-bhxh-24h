@@ -1,28 +1,84 @@
 <!DOCTYPE html>
 <html lang="vi">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Tin tức BHXH 24h</title>
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Meta SEO cơ bản -->
+    <meta
+      name="description"
+      content="Cập nhật tin tức, hướng dẫn và biểu mẫu Bảo hiểm Xã hội (BHXH) mới nhất."
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" href="favicon.ico" />
   </head>
   <body>
-    <header>
-      <h1>Tin tức Bảo hiểm Xã hội 24h</h1>
-      <p>Cập nhật tin nhanh, chính xác về BHXH - BHYT - BHTN</p>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <a href="/" aria-label="Trang chủ Tin tức BHXH 24h"
+            >BHXH <span class="muted">24h</span></a
+          >
+        </div>
+
+        <nav class="main-nav" aria-label="Chính">
+          <a href="#">Tin tức</a>
+          <a href="#">Hướng dẫn</a>
+          <a href="#">Biểu mẫu</a>
+          <a href="#">Tra cứu</a>
+          <a href="#">Liên hệ</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="hotline">📞 1900-XXX-XXX</div>
+        </div>
+      </div>
     </header>
 
-    <main>
-      <article>
-        <h2>Tin nổi bật</h2>
-        <p>Đây là nơi hiển thị tin chính trong ngày...</p>
-      </article>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="kicker">Tin nóng</p>
+          <h1 class="hero-title">
+            Sửa đổi chính sách BHXH 2025 — Những điều cần biết
+          </h1>
+          <p class="hero-desc">
+            Tổng hợp tin tức, hướng dẫn thủ tục, biểu mẫu và công cụ tra cứu cho
+            người lao động và doanh nghiệp.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#news" class="btn btn-primary">Xem tin mới</a>
+            <a href="#tools" class="btn btn-ghost">Tra cứu hồ sơ</a>
+          </div>
+        </div>
+
+        <figure class="hero-visual" aria-hidden="true">
+          <img
+            src="assets/images/hero-bhxh.jpg"
+            alt="Người lao động và chuyên viên tư vấn BHXH"
+            loading="eager"
+          />
+        </figure>
+      </div>
+    </section>
+
+    <main id="news" class="container">
+      <!-- phần list tin sẽ thêm ở đây -->
+      <section class="news-list">
+        <h2>Tin mới nhất</h2>
+        <p>Đang cập nhật...</p>
+      </section>
     </main>
 
-    <footer>
-      <p>© 2025 Tin tức BHXH 24h | Liên hệ: info@bhxh24h.vn</p>
+    <footer class="site-footer">
+      <div class="container">
+        © 2025 Tin tức BHXH 24h — Liên hệ: info@bhxh24h.vn
+      </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
